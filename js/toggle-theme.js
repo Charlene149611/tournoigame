@@ -6,15 +6,15 @@ const currentTheme = localStorage.getItem('theme') || 'light';
 
 if (currentTheme === 'dark') {
     document.body.classList.add('dark-mode');
-    document.getElementById('theme-toggle').innerHTML = '<i class="fas fa-sun"></i>';
+    document.getElementById('toggle-theme').innerHTML = '<i class="fas fa-sun"></i>';
 } else {
     document.body.classList.remove('dark-mode');
-    document.getElementById('theme-toggle').innerHTML = '<i class="fas fa-moon"></i>';
+    document.getElementById('toggle-theme').innerHTML = '<i class="fas fa-moon"></i>';
 }
 
 // On va ajouter l'évenement pour changer le thème
 
-document.getElementById('theme-toggle').addEventListener('click', function() {
+document.getElementById('toggle-theme').addEventListener('click', function() {
     const isDarkMode = document.body.classList.toggle('dark-mode');
     
     // On va sauvegarder le thème dans le localStorage
