@@ -1,0 +1,83 @@
+{
+    "tournaments": [
+        {
+            "id": 1,
+            "name": "Tournoi FIFA 2025",
+            "game": "FIFA 2025",
+            "date": "2025-06-01T18:00:00Z",
+            "maxParticipants": 50,
+            "currentParticipants": 30
+        }
+        ,
+        {
+            "id": 2,
+            "name": "Chess Masters 2025",
+            "game": "Chess",
+            "date": "2025-07-15T10:00:00Z",
+            "maxParticipants": 100,
+            "currentParticipants": 75
+        },
+        {
+            "id": 3,
+            "name": "Rocket League Championship",
+            "game": "Rocket League",
+            "date": "2025-08-20T15:30:00Z",
+            "maxParticipants": 64,
+            "currentParticipants": 64
+        }
+        ,
+        {
+            "id": 4,
+            "name": "Valorant Open",
+            "game": "Valorant",
+            "date": "2025-09-10T12:00:00Z",
+            "maxParticipants": 128,
+            "currentParticipants": 100
+        }
+        ,
+        {
+            "id": 5,
+            "name": "League of Legends Summer Clash",
+            "game": "League of Legends",
+            "date": "2025-10-05T14:00:00Z",
+            "maxParticipants": 256,
+            "currentParticipants": 200
+        }
+        ,
+        {
+            "id": 6,
+            "name": "Dota 2 International",
+            "game": "Dota 2",
+            "date": "2025-11-01T16:00:00Z",
+            "maxParticipants": 32,
+            "currentParticipants": 20
+        }
+        ,
+        {
+            "id": 7,
+            "name": "Overwatch League Finals",
+            "game": "Overwatch",
+            "date": "2025-12-15T19:00:00Z",
+            "maxParticipants": 64,
+            "currentParticipants": 50
+        }
+        ,
+        {
+            "id": 8,
+            "name": "PUBG Global Championship",
+            "game": "PUBG",
+            "date": "2025-12-20T17:00:00Z",
+            "maxParticipants": 128,
+            "currentParticipants": 100
+        }
+        ,
+        {
+            "id": 9,
+            "name": "Apex Legends Arena",
+            "game": "Apex Legends",
+            "date": "2025-12-25T13:00:00Z",
+            "maxParticipants": 64,
+            "currentParticipants": 30
+        }
+    ]
+}

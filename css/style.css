@@ -1,0 +1,38 @@
+/******************************* COLOR THEME *******************************/
+
+/****************** LIGHT THEME ***************/
+
+:root {
+    --background: #f4f4f9;
+    --text: #333333;
+    --button: #007BFF;
+    --accent: #FF5722;
+}
+
+/****************** DARK THEME ***************/
+
+body.dark {
+    --background: #1e1e2f;
+    --text: #f1f1f1;
+    --button: #3399FF;
+    --accent: #FF9800;
+}
+
+/******************************* GENERAL STYLES *******************************/
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/******************************* FONTS STYLES *******************************/
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
