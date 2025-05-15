@@ -4,18 +4,26 @@
 
 :root {
     --background: #f4f4f9;
+
     --text: #333333;
     --button: #007BFF;
     --accent: #FF5722;
+
+    --footer-background: #000000;
+    --footer-text: #ffffff;
 }
 
 /****************** DARK THEME ***************/
 
 body.dark {
     --background: #1e1e2f;
+
     --text: #f1f1f1;
     --button: #3399FF;
     --accent: #FF9800;
+
+    --footer-background: #ffffff;
+    --footer-text: #000000;
 }
 
 /******************************* GENERAL STYLES *******************************/
@@ -24,7 +32,24 @@ body {
     background-color: var(--background);
     color: var(--text);
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 /******************************* FONTS STYLES *******************************/
@@ -35,4 +60,86 @@ h1 {
 
 p {
     font-size: 16px;
+}
+
+/******************************* BUTTON *******************************/
+
+#toggle-theme {
+    background-color: var(--button);
+    color: #000000;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-theme:hover {
+    background-color: darken(var(--button), 10%);
+}
+
+/******************************* FORM *******************************/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+    padding: 20px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+}
+
+form input:focus,
+form select:focus,
+form button:focus {
+    outline: none;
+    border-color: var(--button);
+    box-shadow: 0 0 4px var(--button);
+}
+
+form button {
+    background-color: var(--button);
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: darken(var(--button), 10%);
+}
+
+
+/******************************* FOOTER *******************************/
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.social-media i {
+    color: var(--footer-text);
+    font-size: 25px;
+    margin: 10px;
 }
